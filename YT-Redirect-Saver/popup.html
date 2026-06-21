@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 230px; font-family: Arial, sans-serif; padding: 12px; margin: 0; box-sizing: border-box; }
+    .form-group { margin-bottom: 10px; text-align: left; }
+    label { font-size: 11px; font-weight: bold; color: #4a5568; display: block; margin-bottom: 3px; }
+    input[type="text"] { width: 100%; padding: 6px; box-sizing: border-box; border: 1px solid #cbd5e0; border-radius: 4px; font-size: 13px; text-align: center; font-weight: bold; }
+    button { background-color: #ff0000; color: white; border: none; padding: 10px; font-size: 13px; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; margin-top: 5px; }
+    button:hover { background-color: #cc0000; }
+    #status { margin-top: 10px; font-size: 12px; text-align: center; color: #2d3748; }
+  </style>
+</head>
+<body>
+  <div class="form-group">
+    <label>พิกัดเซลล์คอลัมน์ B (ชีต link):</label>
+    <input type="text" id="cellInput" value="B96" placeholder="เช่น B96, B97">
+  </div>
+  <button id="saveBtn">📌 บันทึกทับเซลล์และสร้าง ID</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
